@@ -1,0 +1,10 @@
+{
+  "title": "Buff",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string"
+    }
+  }
+}

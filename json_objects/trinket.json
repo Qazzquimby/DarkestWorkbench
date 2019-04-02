@@ -1,0 +1,57 @@
+{
+  "title": "Trinket",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "buffs": {
+      "title": "Buffs",
+      "type": "array",
+      "format": "tabs",
+      "items": {
+        "title": "Buff",
+        "headerTemplate": "{{self.name}}",
+        "$ref": "buff.json"
+      },
+      "options": {
+        "collapsed": false,
+        "disable_array_reorder": true,
+        "disable_array_delete_all_rows": true,
+        "disable_array_delete_last_row": true
+      }
+    },
+    "hero_class_requirements": {
+      "title": "Hero Requirements",
+      "description": "Heroes that can use this trinket. Leave empty to let any hero use it.",
+      "type": "array",
+      "format": "tabs",
+      "items": {
+        "$ref": "../generated_json_objects/hero.json"
+      },
+      "options": {
+        "collapsed": false,
+        "disable_array_reorder": true,
+        "disable_array_delete_all_rows": true,
+        "disable_array_delete_last_row": true
+      }
+    },
+    "rarity": {
+      "title": "Rarity",
+      "type": "string"
+    },
+    "price": {
+      "title": "Price",
+      "type": "integer"
+    },
+    "limit": {
+      "title": "Ownership Limit",
+      "type": "integer"
+    },
+    "origin_dungeon": {
+      "title": "Origin Dungeon",
+      "type": "string"
+    }
+  }
+}

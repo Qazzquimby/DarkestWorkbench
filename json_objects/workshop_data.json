@@ -1,0 +1,59 @@
+{
+  "properties": {
+    "Title": {
+      "title": "Title",
+      "type": "string",
+      "minLength": 1,
+      "description": "The name of the mod, as it should appear in the workshop."
+    },
+    "PreviewIconFile": {
+      "title": "Icon",
+      "type": "string",
+      "format": "url",
+      "options": {
+        "upload": true
+      },
+      "description": "A 512x512 png used as the icon for the mod in the workshop.",
+      "required": false
+    },
+    "Tags": {
+      "title": "Tags",
+      "type": "array",
+      "format": "table",
+      "items": {
+        "title": "Tag",
+        "type": "string"
+      },
+      "options": {
+        "disable_array_reorder": true
+      },
+      "description": "A list of tags to describe the mod in the workshop."
+    },
+    "Description": {
+      "title": "Description",
+      "type": "string",
+      "format": "textarea"
+    },
+    "Visibility": {
+      "title": "Visibility",
+      "type": "string",
+      "enum": [
+        "public",
+        "private",
+        "friends"
+      ],
+      "options": {
+        "enum_titles": [
+          "Public - Visible to anyone.",
+          "Private - Visible only to you.",
+          "Friends - Visible to you and your friends on Steam."
+        ]
+      },
+      "description": "Who can see the mod in the workshop."
+    }
+  },
+  "options": {
+    "collapsed": true
+  }
+}
+

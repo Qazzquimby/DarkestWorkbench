@@ -1,0 +1,15 @@
+{
+  "title": "New Trinkets",
+  "format": "tabs",
+  "items": {
+    "title": "Trinket",
+    "headerTemplate": "{{self.name}}",
+    "$ref": "trinket.json"
+  },
+  "options": {
+    "collapsed": false,
+    "disable_array_reorder": true,
+    "disable_array_delete_all_rows": true,
+    "disable_array_delete_last_row": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "title": "Mod",
+  "properties": {
+    "WorkshopData": {
+      "type": "object",
+      "title": "Workshop Information",
+      "$ref": "workshop_data.json"
+    },
+    "NewTrinkets": {
+      "type": "array",
+      "title": "New Trinkets",
+      "$ref": "new_trinkets.json"
+    }
+  }
+}

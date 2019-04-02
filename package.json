@@ -1,0 +1,53 @@
+{
+  "name": "app",
+  "productName": "App",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "user/repo",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "dependencies": {
+    "@json-editor/json-editor": "^1.3.5",
+    "app": "latest",
+    "electron-debug": "^2.0.0",
+    "fast-glob": "latest",
+    "homedir": "^0.6.0",
+    "jshint": "^2.10.1",
+    "jslint": "^0.12.1"
+  },
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^4.1.0",
+    "electron-packager": "^12.1.0",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^5.0.0",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333",
+    "xo": "^0.21.1"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "browser"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    }
+  }
+}
